@@ -55,26 +55,52 @@ footer {
   color: #fff;
   font: 1em sans-serif;
 }
-@media screen and (max-width: 992px) {
+
+.res {
+  background: #3d94f6;
+  background-image: linear-gradient(to bottom, #3d94f6, #1e62d0);
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: Garamond;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 7px 15px;
+  margin: auto;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #337fed 1px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.res:hover {
+  background: #1e62d0;
+  background-image: linear-gradient(to bottom, #1e62d0, #3d94f6);
+}
+
+@media screen and (max-width: 768px) {
   #level-title {
     font-size: 3.5rem;
     margin: 4% 5%;
   }
   .btn {
     margin: 20px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-width: 13px;
   }
   footer {
     font-size: 2.4rem;
-    position: absolute;
+    position: relative;
     bottom: 4%;
     left: 50%;
     transform: translateX(calc(-50%));
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 556px) {
   #level-title {
     font-size: 3.1rem;
     margin: 7% 5%;
@@ -84,8 +110,8 @@ footer {
   }
   .btn {
     margin: 15px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-width: 7px;
   }
   .pressed {
@@ -93,5 +119,15 @@ footer {
   }
   footer {
     bottom: 7%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 430px) {
+  .btn {
+    margin: 15px;
+    width: 75px;
+    height: 75px;
+  }
+  .container {
+    width: 100%;
   }
 }
