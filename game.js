@@ -8,7 +8,9 @@ var started = false; // To check/keep track of game state. Toggle state
 var level = 0;
 
 // Detect keyboard key press to start game
-$(document).keypress(function () {
+$(document).keypress(begin);
+$(".res").click(begin);
+function begin() {
 
     // if (started === false) {
     if (!started) { // Ingone keypress if game is running/started
@@ -17,7 +19,7 @@ $(document).keypress(function () {
         started = true;
     }
 
-});
+}
 
 // Detect click events to button with class btn
 $(".btn").click(function () {
